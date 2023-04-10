@@ -1,22 +1,32 @@
-# Introduction
+1. Introduction
 ROS2 package to control the [AL5D robot arm of Lynxmotion](https://www.robotshop.com/products/lynxmotion-al5d-4-degrees-freedom-robotic-arm-combo-kit).
 
-# Setting
-1. Directly commnication between ROS2 and motor of robot is impossible. You need to upload the [Arduino program](https://drive.google.com/file/d/1dJOSnEAfzrh7GTa5parboIpwfxzVnE51/view?usp=sharing) into the controller board of robot called the [BotBoarduino](https://www.robotshop.com/products/lynxmotion-botboarduino-robot-controller). That board is same as Arduino Duemilanove.
+2. Setting the robot side code
+- Directly commnication between ROS2 and motor of robot is impossible. You need to upload the [Arduino program](https://drive.google.com/file/d/1dJOSnEAfzrh7GTa5parboIpwfxzVnE51/view?usp=sharing) into the controller board of robot called the [BotBoarduino](https://www.robotshop.com/products/lynxmotion-botboarduino-robot-controller). That board is same as Arduino Duemilanove.
 
-Command protocol is
+- Command Protocol
+The example of command protocol is **^b065s135e010w090g120w000$**.
+The first '^' and last $ means the start and end of command string.
+  - b065: Base Rotate Angle
+  - s135: Shoulder Rotate Angle
+  - e010: Elbow Rotate Angle
+  - w090: Wrist Rotate Angle
+  - g120: Gripper motor rotate angle
+  - w000: WristRotate Rotate Angle
+  
+<img src="images/al5d_command.png" width="600">
+  
+- Download this repository under the src folder of your ROS2 workspace.
 
-^b065s135e010w090g120w000$
-
-2. Download this repository under the src folder of your ROS2 workspace.
-
-3. Build the ROS2 package using below command.
+- Build the ROS2 package using below command.
 ```
 $ colcon build --packages-select al5d_arm_ros2
 ```
 
-4. Run the built package using below command.
+- Run the built package using below command.
 ```
 $  ros2 run al5d_arm_ros2 controller
 ```
-5. 
+
+- Now you should see the ROS2 topic called 'al5d_command'.
+<img src="images/al5d_command.png" width="600">
