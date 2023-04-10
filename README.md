@@ -6,17 +6,20 @@ ROS2 package to control the [AL5D robot arm of Lynxmotion](https://www.robotshop
 
 - Command Protocol
 The example of command protocol is **^b065s135e010w090g120w000$**.
-The first '^' and last $ means the start and end of command string.
+The first '^' and last $ means the start and end of command string. Another part means the parts of robot arm and the desired angle for them. 
   - b065: Base Rotate Angle
   - s135: Shoulder Rotate Angle
   - e010: Elbow Rotate Angle
   - w090: Wrist Rotate Angle
   - g120: Gripper motor rotate angle
   - w000: WristRotate Rotate Angle
-  
-<img src="images/al5d_command.png" width="600">
+
+<img src="images/al5d_part.png" width="600">
   
 - Download this repository under the src folder of your ROS2 workspace.
+```
+$ colcon build --packages-select al5d_arm_ros2
+```
 
 - Build the ROS2 package using below command.
 ```
