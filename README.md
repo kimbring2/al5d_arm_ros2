@@ -33,8 +33,10 @@ $ colcon build --symlink-install --cmake-args=-DCMAKE_BUILD_TYPE=Release
 $ echo source $(pwd)/install/local_setup.bash >> ~/.bashrc
 $ source ~/.bashrc
 ```
-  
-# Starting the Leap Motion sensor
+
+# Starting the al5d_arm_ros2 package
+First, you should upload the Arduino code into Botboarduino of AL5D. Next, check the which USB port is connected to that board.
+
 - Run the built package using below command.
 ```
 $  ros2 run al5d_arm_ros2 controller
