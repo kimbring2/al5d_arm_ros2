@@ -24,6 +24,7 @@ The first '^' and last $ means the start and end of command string. Another part
 The Aruino code parses that command and give a PWM signal to each motors of robot.
   
 # Build the package
+```
 $ cd ~/ros2_ws/src/ #use your current ros2 workspace folder
 $ git clone  --recursive https://github.com/kimbring2/al5d_arm_ros2.git
 $ cd ..
@@ -31,9 +32,9 @@ $ rosdep install --from-paths src --ignore-src -r -y
 $ colcon build --symlink-install --cmake-args=-DCMAKE_BUILD_TYPE=Release
 $ echo source $(pwd)/install/local_setup.bash >> ~/.bashrc
 $ source ~/.bashrc
+```
   
 # Starting the Leap Motion sensor
-
 - Run the built package using below command.
 ```
 $  ros2 run al5d_arm_ros2 controller
