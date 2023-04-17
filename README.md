@@ -1,7 +1,12 @@
-# 1. Introduction
+# Introduction
 ROS2 package to control the [AL5D robot arm of Lynxmotion](https://www.robotshop.com/products/lynxmotion-al5d-4-degrees-freedom-robotic-arm-combo-kit).
 
-# 2. Setting the robot side code
+# Requirements
+- Ubuntu 20.04
+- ROS2 Foxy
+- Real AL5d Robot Arm
+
+# Setting the robot side code
 - Directly commnication between ROS2 and motor of robot is impossible. You need to upload the [Arduino program](https://drive.google.com/file/d/1dJOSnEAfzrh7GTa5parboIpwfxzVnE51/view?usp=sharing) into the controller board of robot called the [BotBoarduino](https://www.robotshop.com/products/lynxmotion-botboarduino-robot-controller). That board is same as Arduino Duemilanove.
 
 - Command Protocol
@@ -16,17 +21,18 @@ The first '^' and last $ means the start and end of command string. Another part
 
 <img src="images/al5d_part.png" width="600">
   
-The Aruino code parse that command and give a PWM signal to each motors of robot.
+The Aruino code parses that command and give a PWM signal to each motors of robot.
   
-- Download this repository under the src folder of your ROS2 workspace.
-```
-$ colcon build --packages-select al5d_arm_ros2
-```
-
-- Build the ROS2 package using below command.
-```
-$ colcon build --packages-select al5d_arm_ros2
-```
+# Build the package
+$ cd ~/ros2_ws/src/ #use your current ros2 workspace folder
+$ git clone  --recursive https://github.com/kimbring2/al5d_arm_ros2.git
+$ cd ..
+$ rosdep install --from-paths src --ignore-src -r -y
+$ colcon build --symlink-install --cmake-args=-DCMAKE_BUILD_TYPE=Release
+$ echo source $(pwd)/install/local_setup.bash >> ~/.bashrc
+$ source ~/.bashrc
+  
+# Starting the Leap Motion sensor
 
 - Run the built package using below command.
 ```
@@ -38,5 +44,5 @@ $  ros2 run al5d_arm_ros2 controller
 
 - Finally, publish the command using the below command.
 ```
-$ ros2 topic pub -r 10 /command std_msgs/msg/String "{data: '^b090s135e010w090g120w000$'}" --once
+$ ros2 topic pub -r 10 /al5d_command std_msgs/msg/String "{data: '^b090s135e010w090g120w000$'}" --once
 ```
