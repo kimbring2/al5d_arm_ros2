@@ -6,6 +6,11 @@ ROS2 package to control the [AL5D robot arm of Lynxmotion](https://www.robotshop
 - ROS2 Foxy
 - Real AL5d Robot Arm
 
+# Robot 3D Modelling
+The 3D model of robot is avilable from [this Onshape link](https://cad.onshape.com/documents/82c68b9f0405d1c9ac713261/w/5f83da710e2f8fcf3ccdb0a3/e/03ac8536d46e08a0e15c639d)
+
+<img src="images/onshape_model.png" width="600">
+
 # Setting the robot side code
 - Directly commnication between ROS2 and motor of robot is impossible. You need to upload the [Arduino program](https://drive.google.com/file/d/1dJOSnEAfzrh7GTa5parboIpwfxzVnE51/view?usp=sharing) into the controller board of robot called the [BotBoarduino](https://www.robotshop.com/products/lynxmotion-botboarduino-robot-controller). That board is same as Arduino Duemilanove.
 
