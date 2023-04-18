@@ -1,0 +1,798 @@
+<robot name="onshape">
+	<link name="base_link">
+		<visual>
+			<origin xyz="0.129377 0.050859 -0.00371815" rpy="-4.77681e-10 -0.0043905 1.04863e-12" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/support-2.5.stl"/>
+			</geometry>
+			<material name="support-2.5_material">
+				<color rgba="0.647059 0.647059 0.647059 1.0"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0.129377 0.050859 -0.00371815" rpy="-4.77681e-10 -0.0043905 1.04863e-12" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/support-2.5.stl"/>
+			</geometry>
+			<material name="support-2.5_material">
+				<color rgba="0.647059 0.647059 0.647059 1.0"/>
+			</material>
+		</collision>
+		<visual>
+			<origin xyz="0.129385 -0.017641 -0.00371812" rpy="-4.77681e-10 -0.0043905 1.04863e-12" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/support-2.5.stl"/>
+			</geometry>
+			<material name="support-2.5_material">
+				<color rgba="0.647059 0.647059 0.647059 1.0"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0.129385 -0.017641 -0.00371812" rpy="-4.77681e-10 -0.0043905 1.04863e-12" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/support-2.5.stl"/>
+			</geometry>
+			<material name="support-2.5_material">
+				<color rgba="0.647059 0.647059 0.647059 1.0"/>
+			</material>
+		</collision>
+		<visual>
+			<origin xyz="0.0624688 0.148426 -0.00701195" rpy="-4.77681e-10 -0.0043905 1.04863e-12" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/base-plate.stl"/>
+			</geometry>
+			<material name="base-plate_material">
+				<color rgba="0.8 0.8 0.8 1.0"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0.0624688 0.148426 -0.00701195" rpy="-4.77681e-10 -0.0043905 1.04863e-12" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/base-plate.stl"/>
+			</geometry>
+			<material name="base-plate_material">
+				<color rgba="0.8 0.8 0.8 1.0"/>
+			</material>
+		</collision>
+		<visual>
+			<origin xyz="0.0783857 -0.017641 -0.00394203" rpy="-4.77681e-10 -0.0043905 1.04863e-12" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/support-2.5.stl"/>
+			</geometry>
+			<material name="support-2.5_material">
+				<color rgba="0.647059 0.647059 0.647059 1.0"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0.0783857 -0.017641 -0.00394203" rpy="-4.77681e-10 -0.0043905 1.04863e-12" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/support-2.5.stl"/>
+			</geometry>
+			<material name="support-2.5_material">
+				<color rgba="0.647059 0.647059 0.647059 1.0"/>
+			</material>
+		</collision>
+		<visual>
+			<origin xyz="0.0783779 0.0508616 -0.00394207" rpy="-4.77681e-10 -0.0043905 1.04863e-12" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/support-2.5.stl"/>
+			</geometry>
+			<material name="support-2.5_material">
+				<color rgba="0.647059 0.647059 0.647059 1.0"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0.0783779 0.0508616 -0.00394207" rpy="-4.77681e-10 -0.0043905 1.04863e-12" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/support-2.5.stl"/>
+			</geometry>
+			<material name="support-2.5_material">
+				<color rgba="0.647059 0.647059 0.647059 1.0"/>
+			</material>
+		</collision>
+		<visual>
+			<origin xyz="0.0966582 -0.00779689 -0.00386181" rpy="1.5708 -0.0043905 1.04863e-12" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/br-ns-1.stl"/>
+			</geometry>
+			<material name="br-ns-1_material">
+				<color rgba="0.917647 0.917647 0.917647 1.0"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0.0966582 -0.00779689 -0.00386181" rpy="1.5708 -0.0043905 1.04863e-12" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/br-ns-1.stl"/>
+			</geometry>
+			<material name="br-ns-1_material">
+				<color rgba="0.917647 0.917647 0.917647 1.0"/>
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="0.0862539 -0.00770233 0.0169319" rpy="0 0 0"/>
+			<mass value="0.507728" />
+			<inertia ixx="0.000663142" ixy="-2.83755e-06"  ixz="-0.000115853" iyy="0.00107904" iyz="-2.54152e-06" izz="0.00144317" />
+		</inertial>
+	</link>
+	<link name="shoulder">
+		<visual>
+			<origin xyz="-0.0115013 0.0345591 -0.0296991" rpy="-3.14159 3.5506e-17 6.69028e-19" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/asb-201.stl"/>
+			</geometry>
+			<material name="asb-201_material">
+				<color rgba="0.768627 0.886275 0.952941 1.0"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="-0.0115013 0.0345591 -0.0296991" rpy="-3.14159 3.5506e-17 6.69028e-19" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/asb-201.stl"/>
+			</geometry>
+			<material name="asb-201_material">
+				<color rgba="0.768627 0.886275 0.952941 1.0"/>
+			</material>
+		</collision>
+		<visual>
+			<origin xyz="-0.0362093 0.0263471 -0.042939" rpy="1.5708 -1.27504e-16 1.5708" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/hs-805bb.stl"/>
+			</geometry>
+			<material name="hs-805bb_material">
+				<color rgba="0.909804 0.909804 0.909804 1.0"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="-0.0362093 0.0263471 -0.042939" rpy="1.5708 -1.27504e-16 1.5708" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/hs-805bb.stl"/>
+			</geometry>
+			<material name="hs-805bb_material">
+				<color rgba="0.909804 0.909804 0.909804 1.0"/>
+			</material>
+		</collision>
+		<visual>
+			<origin xyz="-2.77556e-17 -6.50521e-19 0.043307" rpy="-1.5708 -5.5768e-20 1.51857e-17" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/br-ns-2.stl"/>
+			</geometry>
+			<material name="br-ns-2_material">
+				<color rgba="0.8 0.8 0.8 1.0"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="-2.77556e-17 -6.50521e-19 0.043307" rpy="-1.5708 -5.5768e-20 1.51857e-17" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/br-ns-2.stl"/>
+			</geometry>
+			<material name="br-ns-2_material">
+				<color rgba="0.8 0.8 0.8 1.0"/>
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="-0.00194627 -0.000935653 -0.00405395" rpy="0 0 0"/>
+			<mass value="0.287977" />
+			<inertia ixx="0.000156044" ixy="-3.26542e-06"  ixz="-8.14834e-06" iyy="0.000160924" iyz="-2.16392e-06" izz="0.000302076" />
+		</inertial>
+	</link>
+	<link name="arm">
+		<visual>
+			<origin xyz="-3.67761e-16 0.0639719 0.034306" rpy="-1.5708 -4.35975e-16 5.98102e-17" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/asb-202.stl"/>
+			</geometry>
+			<material name="asb-202_material">
+				<color rgba="0.647059 0.647059 0.647059 1.0"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="-3.67761e-16 0.0639719 0.034306" rpy="-1.5708 -4.35975e-16 5.98102e-17" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/asb-202.stl"/>
+			</geometry>
+			<material name="asb-202_material">
+				<color rgba="0.647059 0.647059 0.647059 1.0"/>
+			</material>
+		</collision>
+		<visual>
+			<origin xyz="9.71445e-17 1.2837e-16 0.071106" rpy="-1.5708 -1.5708 0" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/shoulder-horn.stl"/>
+			</geometry>
+			<material name="shoulder-horn_material">
+				<color rgba="0.231373 0.380392 0.705882 1.0"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="9.71445e-17 1.2837e-16 0.071106" rpy="-1.5708 -1.5708 0" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/shoulder-horn.stl"/>
+			</geometry>
+			<material name="shoulder-horn_material">
+				<color rgba="0.231373 0.380392 0.705882 1.0"/>
+			</material>
+		</collision>
+		<visual>
+			<origin xyz="1.38778e-17 0 -0.0015" rpy="-1.5708 -1.5708 0" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/panel-2.stl"/>
+			</geometry>
+			<material name="panel-2_material">
+				<color rgba="0.8 0.8 0.8 1.0"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="1.38778e-17 0 -0.0015" rpy="-1.5708 -1.5708 0" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/panel-2.stl"/>
+			</geometry>
+			<material name="panel-2_material">
+				<color rgba="0.8 0.8 0.8 1.0"/>
+			</material>
+		</collision>
+		<visual>
+			<origin xyz="0.0123063 0.0732524 0.0009685" rpy="3.14159 4.44977e-16 3.14159" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/asb-203.stl"/>
+			</geometry>
+			<material name="asb-203_material">
+				<color rgba="0.615686 0.811765 0.929412 1.0"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0.0123063 0.0732524 0.0009685" rpy="3.14159 4.44977e-16 3.14159" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/asb-203.stl"/>
+			</geometry>
+			<material name="asb-203_material">
+				<color rgba="0.615686 0.811765 0.929412 1.0"/>
+			</material>
+		</collision>
+		<visual>
+			<origin xyz="-4.05231e-15 0.146277 0.0660687" rpy="1.5708 5.01771e-16 -3.14159" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/arm-horn.stl"/>
+			</geometry>
+			<material name="arm-horn_material">
+				<color rgba="0.231373 0.380392 0.705882 1.0"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="-4.05231e-15 0.146277 0.0660687" rpy="1.5708 5.01771e-16 -3.14159" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/arm-horn.stl"/>
+			</geometry>
+			<material name="arm-horn_material">
+				<color rgba="0.231373 0.380392 0.705882 1.0"/>
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="4.10817e-12 0.0597549 0.0409192" rpy="0 0 0"/>
+			<mass value="0.05596" />
+			<inertia ixx="0.000191971" ixy="-1.1249e-14"  ixz="-2.56258e-15" iyy="6.11521e-05" iyz="1.55625e-05" izz="0.000137269" />
+		</inertial>
+	</link>
+	<link name="elbow">
+		<visual>
+			<origin xyz="-0.140995 -0.021336 -0.0321592" rpy="-1.7746e-16 2.26527e-17 6.1898e-16" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/asb-06.stl"/>
+			</geometry>
+			<material name="asb-06_material">
+				<color rgba="0.231373 0.380392 0.705882 1.0"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="-0.140995 -0.021336 -0.0321592" rpy="-1.7746e-16 2.26527e-17 6.1898e-16" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/asb-06.stl"/>
+			</geometry>
+			<material name="asb-06_material">
+				<color rgba="0.231373 0.380392 0.705882 1.0"/>
+			</material>
+		</collision>
+		<visual>
+			<origin xyz="-0.0220726 -0.01905 -0.003" rpy="-2.06035e-16 8.29434e-18 9.33089e-17" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/asb-204.stl"/>
+			</geometry>
+			<material name="asb-204_material">
+				<color rgba="0.498039 0.498039 0.498039 1.0"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="-0.0220726 -0.01905 -0.003" rpy="-2.06035e-16 8.29434e-18 9.33089e-17" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/asb-204.stl"/>
+			</geometry>
+			<material name="asb-204_material">
+				<color rgba="0.498039 0.498039 0.498039 1.0"/>
+			</material>
+		</collision>
+		<visual>
+			<origin xyz="0 2.77556e-17 -0.0015" rpy="-1.5708 -1.5708 0" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/panel-2.stl"/>
+			</geometry>
+			<material name="panel-2_material">
+				<color rgba="0.8 0.8 0.8 1.0"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0 2.77556e-17 -0.0015" rpy="-1.5708 -1.5708 0" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/panel-2.stl"/>
+			</geometry>
+			<material name="panel-2_material">
+				<color rgba="0.8 0.8 0.8 1.0"/>
+			</material>
+		</collision>
+		<visual>
+			<origin xyz="-0.0251079 -0.0060198 -0.0321592" rpy="3.14159 1.5708 0" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/at-03.stl"/>
+			</geometry>
+			<material name="at-03_material">
+				<color rgba="0.768627 0.886275 0.952941 1.0"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="-0.0251079 -0.0060198 -0.0321592" rpy="3.14159 1.5708 0" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/at-03.stl"/>
+			</geometry>
+			<material name="at-03_material">
+				<color rgba="0.768627 0.886275 0.952941 1.0"/>
+			</material>
+		</collision>
+		<visual>
+			<origin xyz="-0.0219329 -0.0060198 -0.0321592" rpy="-1.5708 1.5708 0" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/hub-08.stl"/>
+			</geometry>
+			<material name="hub-08_material">
+				<color rgba="0.917647 0.917647 0.917647 1.0"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="-0.0219329 -0.0060198 -0.0321592" rpy="-1.5708 1.5708 0" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/hub-08.stl"/>
+			</geometry>
+			<material name="hub-08_material">
+				<color rgba="0.917647 0.917647 0.917647 1.0"/>
+			</material>
+		</collision>
+		<visual>
+			<origin xyz="-0.151124 0.00554557 -0.0162697" rpy="-1.5708 1.5708 0" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/elbow_hs-422.stl"/>
+			</geometry>
+			<material name="elbow_hs-422_material">
+				<color rgba="0.611765 0.811765 0.921569 1.0"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="-0.151124 0.00554557 -0.0162697" rpy="-1.5708 1.5708 0" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/elbow_hs-422.stl"/>
+			</geometry>
+			<material name="elbow_hs-422_material">
+				<color rgba="0.611765 0.811765 0.921569 1.0"/>
+			</material>
+		</collision>
+		<visual>
+			<origin xyz="-0.151123 0.0055458 -0.0161419" rpy="-1.5708 1.5708 0" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/motor-gear.stl"/>
+			</geometry>
+			<material name="motor-gear_material">
+				<color rgba="0.917647 0.917647 0.917647 1.0"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="-0.151123 0.0055458 -0.0161419" rpy="-1.5708 1.5708 0" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/motor-gear.stl"/>
+			</geometry>
+			<material name="motor-gear_material">
+				<color rgba="0.917647 0.917647 0.917647 1.0"/>
+			</material>
+		</collision>
+		<visual>
+			<origin xyz="-0.0235204 -0.021336 -0.0321592" rpy="-3.14159 -1.69693e-17 3.14159" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/asb-06.stl"/>
+			</geometry>
+			<material name="asb-06_material">
+				<color rgba="0.231373 0.380392 0.705882 1.0"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="-0.0235204 -0.021336 -0.0321592" rpy="-3.14159 -1.69693e-17 3.14159" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/asb-06.stl"/>
+			</geometry>
+			<material name="asb-06_material">
+				<color rgba="0.231373 0.380392 0.705882 1.0"/>
+			</material>
+		</collision>
+		<visual>
+			<origin xyz="-0.181889 -0.0047752 -0.0083594" rpy="3.14159 -1.5708 0" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/panel-1.stl"/>
+			</geometry>
+			<material name="panel-1_material">
+				<color rgba="0.231373 0.380392 0.705882 1.0"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="-0.181889 -0.0047752 -0.0083594" rpy="3.14159 -1.5708 0" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/panel-1.stl"/>
+			</geometry>
+			<material name="panel-1_material">
+				<color rgba="0.231373 0.380392 0.705882 1.0"/>
+			</material>
+		</collision>
+		<visual>
+			<origin xyz="-0.171958 -0.01905 -0.0267363" rpy="-1.78433e-16 2.26395e-17 6.46309e-16" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/asb-04.stl"/>
+			</geometry>
+			<material name="asb-04_material">
+				<color rgba="0.647059 0.647059 0.647059 1.0"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="-0.171958 -0.01905 -0.0267363" rpy="-1.78433e-16 2.26395e-17 6.46309e-16" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/asb-04.stl"/>
+			</geometry>
+			<material name="asb-04_material">
+				<color rgba="0.647059 0.647059 0.647059 1.0"/>
+			</material>
+		</collision>
+		<visual>
+			<origin xyz="0.0157732 1.27e-05 -0.0306998" rpy="3.14159 4.98931e-16 -1.5708" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/hs-645mg.stl"/>
+			</geometry>
+			<material name="hs-645mg_material">
+				<color rgba="0.8 0.8 0.8 1.0"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0.0157732 1.27e-05 -0.0306998" rpy="3.14159 4.98931e-16 -1.5708" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/hs-645mg.stl"/>
+			</geometry>
+			<material name="hs-645mg_material">
+				<color rgba="0.8 0.8 0.8 1.0"/>
+			</material>
+		</collision>
+		<visual>
+			<origin xyz="-0.142583 -0.0060198 -0.0321592" rpy="1.5708 1.5708 0" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/hub-08.stl"/>
+			</geometry>
+			<material name="hub-08_material">
+				<color rgba="0.917647 0.917647 0.917647 1.0"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="-0.142583 -0.0060198 -0.0321592" rpy="1.5708 1.5708 0" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/hub-08.stl"/>
+			</geometry>
+			<material name="hub-08_material">
+				<color rgba="0.917647 0.917647 0.917647 1.0"/>
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="-0.0337839 -0.00178522 -0.0316901" rpy="0 0 0"/>
+			<mass value="0.988791" />
+			<inertia ixx="0.000274252" ixy="-0.000173704"  ixz="2.79546e-05" iyy="0.00692373" iyz="3.00662e-06" izz="0.00682311" />
+		</inertial>
+	</link>
+	<link name="wrist">
+		<visual>
+			<origin xyz="0.047276 3.375e-05 0.0230885" rpy="-6.08266e-16 1.5708 0" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/hs-225mg.stl"/>
+			</geometry>
+			<material name="hs-225mg_material">
+				<color rgba="0.25098 0.25098 0.25098 1.0"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0.047276 3.375e-05 0.0230885" rpy="-6.08266e-16 1.5708 0" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/hs-225mg.stl"/>
+			</geometry>
+			<material name="hs-225mg_material">
+				<color rgba="0.25098 0.25098 0.25098 1.0"/>
+			</material>
+		</collision>
+		<visual>
+			<origin xyz="0.049276 5.55112e-17 0.0230999" rpy="3.14159 1.5708 0" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/asb-26.stl"/>
+			</geometry>
+			<material name="asb-26_material">
+				<color rgba="0.501961 0.501961 0.501961 1.0"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0.049276 5.55112e-17 0.0230999" rpy="3.14159 1.5708 0" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/asb-26.stl"/>
+			</geometry>
+			<material name="asb-26_material">
+				<color rgba="0.501961 0.501961 0.501961 1.0"/>
+			</material>
+		</collision>
+		<visual>
+			<origin xyz="-1.04083e-15 -5.55112e-17 0.0468298" rpy="-4.34694e-15 1.5708 0" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/bb-03.stl"/>
+			</geometry>
+			<material name="bb-03_material">
+				<color rgba="0.647059 0.647059 0.647059 1.0"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="-1.04083e-15 -5.55112e-17 0.0468298" rpy="-4.34694e-15 1.5708 0" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/bb-03.stl"/>
+			</geometry>
+			<material name="bb-03_material">
+				<color rgba="0.647059 0.647059 0.647059 1.0"/>
+			</material>
+		</collision>
+		<visual>
+			<origin xyz="-9.99201e-16 -5.55112e-17 0.0468298" rpy="1.3162e-15 -1.5708 0" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/panel-1.stl"/>
+			</geometry>
+			<material name="panel-1_material">
+				<color rgba="0.231373 0.380392 0.705882 1.0"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="-9.99201e-16 -5.55112e-17 0.0468298" rpy="1.3162e-15 -1.5708 0" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/panel-1.stl"/>
+			</geometry>
+			<material name="panel-1_material">
+				<color rgba="0.231373 0.380392 0.705882 1.0"/>
+			</material>
+		</collision>
+		<visual>
+			<origin xyz="-2.77556e-17 -5.55112e-17 -0.0015" rpy="-1.5708 3.33236e-19 2.47402e-18" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/arm-horn.stl"/>
+			</geometry>
+			<material name="arm-horn_material">
+				<color rgba="0.231373 0.380392 0.705882 1.0"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="-2.77556e-17 -5.55112e-17 -0.0015" rpy="-1.5708 3.33236e-19 2.47402e-18" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/arm-horn.stl"/>
+			</geometry>
+			<material name="arm-horn_material">
+				<color rgba="0.231373 0.380392 0.705882 1.0"/>
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="0.0371882 2.99797e-05 0.0234571" rpy="0 0 0"/>
+			<mass value="0.154675" />
+			<inertia ixx="2.65283e-05" ixy="-9.07924e-09"  ixz="1.70133e-07" iyy="4.52632e-05" iyz="3.61213e-10" izz="2.66908e-05" />
+		</inertial>
+	</link>
+	<link name="hand">
+		<visual>
+			<origin xyz="0.0103124 0.0004318 -0.0163031" rpy="-3.14159 9.05092e-15 -7.19119e-15" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/hs-422.stl"/>
+			</geometry>
+			<material name="hs-422_material">
+				<color rgba="0.25098 0.25098 0.25098 1.0"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0.0103124 0.0004318 -0.0163031" rpy="-3.14159 9.05092e-15 -7.19119e-15" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/hs-422.stl"/>
+			</geometry>
+			<material name="hs-422_material">
+				<color rgba="0.25098 0.25098 0.25098 1.0"/>
+			</material>
+		</collision>
+		<visual>
+			<origin xyz="0.007495 -5.55112e-17 -0.01259" rpy="-3.56478e-18 -4.42358e-18 -1.9427e-17" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/horn.stl"/>
+			</geometry>
+			<material name="horn_material">
+				<color rgba="0.917647 0.917647 0.917647 1.0"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0.007495 -5.55112e-17 -0.01259" rpy="-3.56478e-18 -4.42358e-18 -1.9427e-17" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/horn.stl"/>
+			</geometry>
+			<material name="horn_material">
+				<color rgba="0.917647 0.917647 0.917647 1.0"/>
+			</material>
+		</collision>
+		<visual>
+			<origin xyz="-1.38778e-17 -0.0064008 -0.004327" rpy="7.39067e-15 1.5708 0" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/lg-ns.stl"/>
+			</geometry>
+			<material name="lg-ns_material">
+				<color rgba="0.768627 0.886275 0.952941 1.0"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="-1.38778e-17 -0.0064008 -0.004327" rpy="7.39067e-15 1.5708 0" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/lg-ns.stl"/>
+			</geometry>
+			<material name="lg-ns_material">
+				<color rgba="0.768627 0.886275 0.952941 1.0"/>
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="0.00960774 -0.0141472 -0.0162191" rpy="0 0 0"/>
+			<mass value="0.240847" />
+			<inertia ixx="3.5712e-05" ixy="2.38823e-06"  ixz="1.94278e-07" iyy="4.58615e-05" iyz="-3.46234e-07" izz="6.50569e-05" />
+		</inertial>
+	</link>
+	<link name="gripper_2">
+		<visual>
+			<origin xyz="0.0032004 -0.000508 -0.003683" rpy="-7.33092e-18 2.74516e-18 2.93831e-17" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/left-finger.stl"/>
+			</geometry>
+			<material name="left-finger_material">
+				<color rgba="0.917647 0.917647 0.917647 1.0"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0.0032004 -0.000508 -0.003683" rpy="-7.33092e-18 2.74516e-18 2.93831e-17" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/left-finger.stl"/>
+			</geometry>
+			<material name="left-finger_material">
+				<color rgba="0.917647 0.917647 0.917647 1.0"/>
+			</material>
+		</collision>
+		<visual>
+			<origin xyz="-0.00139907 -0.134736 -0.005715" rpy="-3.14159 1.24915e-15 3.14159" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/finger_sensor.stl"/>
+			</geometry>
+			<material name="finger_sensor_material">
+				<color rgba="0.615686 0.811765 0.929412 1.0"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="-0.00139907 -0.134736 -0.005715" rpy="-3.14159 1.24915e-15 3.14159" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/finger_sensor.stl"/>
+			</geometry>
+			<material name="finger_sensor_material">
+				<color rgba="0.615686 0.811765 0.929412 1.0"/>
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="0.0120044 0.0057694 -0.00312431" rpy="0 0 0"/>
+			<mass value="0.00612803" />
+			<inertia ixx="3.22025e-07" ixy="-8.1681e-08"  ixz="1.05444e-07" iyy="7.04545e-07" iyz="1.48751e-08" izz="8.67139e-07" />
+		</inertial>
+	</link>
+	<joint name="gripper_1" type="prismatic">
+		<origin xyz="-0.0189744 0.0064008 -0.0272124" rpy="-3.14159 1.5708 0" />
+		<parent link="hand" />
+		<child link="gripper_2" />
+		<axis xyz="0 0 1"/>
+		<limit effort="1" velocity="20" lower="-0.05" upper="0.05"/>
+		<joint_properties friction="0.0"/>
+	</joint>
+	<link name="gripper_1">
+		<visual>
+			<origin xyz="0.0032004 -0.013462 -0.003683" rpy="-1.1719e-17 3.92532e-18 3.64581e-17" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/right-finger.stl"/>
+			</geometry>
+			<material name="right-finger_material">
+				<color rgba="0.498039 0.498039 0.498039 1.0"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0.0032004 -0.013462 -0.003683" rpy="-1.1719e-17 3.92532e-18 3.64581e-17" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/right-finger.stl"/>
+			</geometry>
+			<material name="right-finger_material">
+				<color rgba="0.498039 0.498039 0.498039 1.0"/>
+			</material>
+		</collision>
+		<visual>
+			<origin xyz="0.0347548 -0.147534 -0.008715" rpy="2.96466e-15 1.04137e-13 -3.39025e-15" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/finger_sensor.stl"/>
+			</geometry>
+			<material name="finger_sensor_material">
+				<color rgba="0.615686 0.811765 0.929412 1.0"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0.0347548 -0.147534 -0.008715" rpy="2.96466e-15 1.04137e-13 -3.39025e-15" />
+			<geometry>
+				<mesh filename="package://urdf_tutorial/meshes/finger_sensor.stl"/>
+			</geometry>
+			<material name="finger_sensor_material">
+				<color rgba="0.615686 0.811765 0.929412 1.0"/>
+			</material>
+		</collision>
+		<inertial>
+			<origin xyz="0.0119806 -0.00576922 -0.00312446" rpy="0 0 0"/>
+			<mass value="0.00612793" />
+			<inertia ixx="3.22007e-07" ixy="8.32603e-08"  ixz="1.06055e-07" iyy="7.11265e-07" iyz="-1.48845e-08" izz="8.73856e-07" />
+		</inertial>
+	</link>
+	<joint name="gripper_2" type="prismatic">
+		<origin xyz="0.0217646 0.0064008 -0.0272124" rpy="1.08934e-14 1.5708 0" />
+		<parent link="hand" />
+		<child link="gripper_1" />
+		<axis xyz="0 0 1"/>
+		<limit effort="1" velocity="20" lower="-0.05" upper="0.05"/>
+		<joint_properties friction="0.0"/>
+	</joint>
+	<joint name="wrist_2" type="revolute">
+		<origin xyz="0.056936 3.375e-05 0.0305835" rpy="1.5708 -1.54861 -1.5708" />
+		<parent link="wrist" />
+		<child link="hand" />
+		<axis xyz="0 0 1"/>
+		<limit effort="1000.0" lower="0.0" upper="3.14" velocity="0.5"/>
+		<joint_properties friction="0.0"/>
+	</joint>
+	<joint name="wrist_1" type="revolute">
+		<origin xyz="-0.180651 -0.0046142 -0.0542165" rpy="-1.52122e-16 -2.12933e-16 -2.12063" />
+		<parent link="elbow" />
+		<child link="wrist" />
+		<axis xyz="0 0 1"/>
+		<limit effort="1000.0" lower="0.0" upper="3.14" velocity="0.5"/>
+		<joint_properties friction="0.0"/>
+	</joint>
+	<joint name="elbow" type="revolute">
+		<origin xyz="-4.05231e-15 0.146277 0.0025433" rpy="-3.14159 1.57164e-15 -1.95055" />
+		<parent link="arm" />
+		<child link="elbow" />
+		<axis xyz="0 0 1"/>
+		<limit effort="1000.0" lower="0.0" upper="3.14" velocity="0.5"/>
+		<joint_properties friction="0.0"/>
+	</joint>
+	<joint name="shoulder" type="revolute">
+		<origin xyz="-0.0395013 0.0118691 -0.027953" rpy="-1.5708 -1.01511 -1.5708" />
+		<parent link="shoulder" />
+		<child link="arm" />
+		<axis xyz="0 0 1"/>
+		<limit effort="1000.0" lower="0.0" upper="3.14" velocity="0.5"/>
+		<joint_properties friction="0.0"/>
+	</joint>
+	<joint name="base" type="revolute">
+		<origin xyz="0.0964724 -0.00779689 0.0384542" rpy="3.14132 0.00438222 3.08016" />
+		<parent link="base_link" />
+		<child link="shoulder" />
+		<axis xyz="0 0 1"/>
+		<limit effort="1000.0" lower="0.0" upper="3.14" velocity="0.5"/>
+		<joint_properties friction="0.0"/>
+	</joint>
+</robot>
