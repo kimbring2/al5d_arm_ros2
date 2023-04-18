@@ -54,3 +54,12 @@ $  ros2 run al5d_arm_ros2 controller
 ```
 $ ros2 topic pub -r 10 /al5d_command std_msgs/msg/String "{data: '^b090s135e010w090g120w000$'}" --once
 ```
+
+# Start the RViz2 node 
+You can virtually control robot using  below command
+
+```
+$ ros2 launch al5d_arm_ros2 display.launch.py
+```
+
+<img src="images/al5d_rviz2.gif" width="600">
