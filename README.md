@@ -1,5 +1,5 @@
 # Introduction
-ROS2 package to control the [AL5D robot arm of Lynxmotion](https://www.robotshop.com/products/lynxmotion-al5d-4-degrees-freedom-robotic-arm-combo-kit).
+ROS2 package to control the [AL5D robot arm of Lynxmotion](https://www.robotshop.com/products/lynxmotion-al5d-4-degrees-freedom-robotic-arm-combo-kit). You must buy the [Lynxmotion Wrist Rotate Upgrade (Medium Duty)](https://www.robotshop.com/products/lynxmotion-wrist-rotate-medium-duty) to run this code.
 
 # Requirements
 - Ubuntu 20.04
@@ -7,7 +7,7 @@ ROS2 package to control the [AL5D robot arm of Lynxmotion](https://www.robotshop
 - Real AL5d Robot Arm
 
 # Robot 3D Modelling
-The 3D model of robot is avilable from [this Onshape link](https://cad.onshape.com/documents/82c68b9f0405d1c9ac713261/w/5f83da710e2f8fcf3ccdb0a3/e/03ac8536d46e08a0e15c639d)
+The 3D model of robot is avilable from [this Onshape link].(https://cad.onshape.com/documents/82c68b9f0405d1c9ac713261/w/5f83da710e2f8fcf3ccdb0a3/e/03ac8536d46e08a0e15c639d)
 
 <img src="images/onshape_model.png" width="600">
 
